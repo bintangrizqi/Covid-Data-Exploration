@@ -61,8 +61,7 @@ from df;
 -- after that we can update it into table 
 SET SQL_SAFE_UPDATES = 0;
 update df set dates = str_to_date(dates,'%m/%d/%Y');
-
--- from the table that shown, there's 
+ 
 select location, dates, total_cases, new_cases, total_deaths, population
 from df
 order by 3 desc;
